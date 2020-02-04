@@ -114,5 +114,5 @@
   <preference name="phonegap-version" value="cli-9.0.0" />
   <preference name="android-maxSdkVersion" value="28" />
   <preference name="android-targetSdkVersion" value="19" />
-  <plugin name="cordova-plugin-firebase" spec="~2.0.5" />
+  <!-- <plugin name="cordova-plugin-firebase" source="npm" /> -->
 </widget>
