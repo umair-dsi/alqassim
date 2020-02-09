@@ -300,7 +300,7 @@ mapModule.controller('IntializeCtrl', function($scope, $rootScope, utilService, 
 				});
 			});
 			
-			/*if(device.platform != 'browser') {
+			if(device.platform != 'browser') {
 				//Firebase
 				window.FirebasePlugin.hasPermission(function(data){
 					console.log("firebase permissions enabled: " + data.isEnabled);
@@ -330,7 +330,7 @@ mapModule.controller('IntializeCtrl', function($scope, $rootScope, utilService, 
 				}, function(error) {
 						console.error("notification received error: " + error);
 				});
-			}*/
+			}
 		}, false);
 	};
 });

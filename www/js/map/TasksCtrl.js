@@ -74,7 +74,19 @@
       $rootScope.loading = false;
     }
   };
-  
+
+  $scope.googleCoords = null;
+  $scope.openGoogleMaps = function() {
+    if($scope.googleCoords != null){
+      var _lat = $scope.googleCoords[1];
+      var _long = $scope.googleCoords[0];
+      
+      window.open("https://maps.google.com?z=10&q="+_lat+","+_long,"_system");
+    }else{
+      console.log("lat long is missing");
+    }
+    
+  };
   $scope.buildingClicked = function(building) {
     if (building.isOpened == undefined || building.isOpened == null || building.isOpened == false) {
       building.isOpened = true;
@@ -83,7 +95,9 @@
         try {
           mapservice.getBuildingsbyBuildingId($rootScope.userInfo.token, $rootScope.userInfo.userId, building.BuildingId, layerName).then(function(result) {
             if(result.data.code == 2) {
-              var jsonData = JSON.parse(result.data.requestJson)
+              var jsonData = JSON.parse(result.data.requestJson);
+              $scope.googleCoords = jsonData.features[0].geometry.coordinates[0][0];
+
               if (jsonData.totalFeatures > 0) {
                   var myStyle = {
                       "color": "#ff7800",

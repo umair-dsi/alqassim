@@ -211,6 +211,11 @@
 									<p ng-if="language =='en-US'">Area: <Span class="aid">{{buildings101.Area_En}}</Span></p>
 									<p ng-if="language =='ar-AE'">منطقة: <Span class="aid">{{buildings101.Area_Ar}}</Span></p>
 									<h6 translate="MAP.UPLOADED_FILES" ng-show="buildings101.Alldocuments != undefined && buildings101.Alldocuments != null && buildings101.Alldocuments.length > 0"></h6>
+								<!---	<button class="task_btn1" id="myBtn1" translate="Open With oogle" style="display:inline-block"></button>	
+									</br> --->
+									<div class="left_upload_i">									
+										<button class="task_btn"  ng-click="openGoogleMaps()"><i class="fa fa-map-marker" style="color: #fff; font-size: 16px;">&nbsp;</i> Open with google</button>
+									</div>
 									<div class="upload_info" ng-repeat="uploadedDocuments101 in buildings101.Alldocuments">	
 										<div class="left_upload_i">
 											<a href="javascript:void(0);" ng-click="viewUploadedDocument(uploadedDocuments101)">{{uploadedDocuments101.File_Name}}</a>
