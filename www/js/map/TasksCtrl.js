@@ -80,8 +80,9 @@
     if($scope.googleCoords != null){
       var _lat = $scope.googleCoords[1];
       var _long = $scope.googleCoords[0];
-      
-      window.open("maps://?z=10&q="+_lat+","+_long,"_system");
+        var uri = encodeURI("https://maps.google.com://?z=10&q="+_lat+","+_long);
+        //window.open("maps://?z=10&q=" + _lat + "," + _long, "_system");
+        window.open(uri, "_system");
     }else{
       console.log("lat long is missing");
     }
