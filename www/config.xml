@@ -42,8 +42,8 @@
       </array>
     </config-file>
   </platform>
-  <preference name="AutoHideSplashScreen" value="false" />
-  <preference name="SplashScreenDelay" value="10000" />
+  <preference name="AutoHideSplashScreen" value="true" />
+  <preference name="SplashScreenDelay" value="5000" />
   <preference name="orientation" value="portrait" />
   <icon src="icon.png" />
   <platform name="android">
