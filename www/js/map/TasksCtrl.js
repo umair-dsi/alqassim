@@ -81,7 +81,7 @@
       var _lat = $scope.googleCoords[1];
       var _long = $scope.googleCoords[0];
       
-      window.open("https://maps.google.com?z=10&q="+_lat+","+_long,"_system");
+      window.open("maps://?z=10&q="+_lat+","+_long,"_system");
     }else{
       console.log("lat long is missing");
     }
