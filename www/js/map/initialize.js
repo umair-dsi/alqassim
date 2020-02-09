@@ -215,8 +215,8 @@ mapModule.controller('IntializeCtrl', function($scope, $rootScope, utilService, 
 		$rootScope.layerCategory = 'layer';
 		$rootScope.L_layers = [];
 		$rootScope.unchecked_layerids = [];
-		//$rootScope.baseUrl = "http://access.spaceimagingme.com:6092/qassimv4/";
-		$rootScope.baseUrl = "https://fe.alqassim.gov.sa/gis/";
+		$rootScope.baseUrl = "http://access.spaceimagingme.com:6092/qassimv4/";
+		//$rootScope.baseUrl = "https://fe.alqassim.gov.sa/gis/";
 		$rootScope.refreshToken = null;
 		$scope.mapBookmark = {selectedBookmark: {}};		
 		$rootScope.isSessionTimeout = false;
