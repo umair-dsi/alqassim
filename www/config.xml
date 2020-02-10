@@ -9,7 +9,7 @@
   </author>
   <content src="index.html" />
   <access origin="*" />
-  <access origin="https://fe.alqassim.gov.sa/gis/" />
+  <access origin="http://fe.alqassim.gov.sa/gis/*" />
   <access origin="https://fe.alqassim.gov.sa/gis/*" />
   <allow-intent href="http://*/*" />
   <allow-intent href="https://*/*" />
