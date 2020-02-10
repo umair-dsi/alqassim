@@ -19,6 +19,8 @@
   <allow-intent href="geo:*" />
   <allow-intent href="maps:*" />
   <allow-navigation href="*" />
+  <allow-navigation href="http://*/*" />
+  <allow-navigation href="https://*/*" />
   <platform name="android">
     <allow-intent href="market:*" />
   </platform>
