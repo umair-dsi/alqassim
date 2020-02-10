@@ -9,8 +9,7 @@
   </author>
   <content src="index.html" />
   <access origin="*" />
-  <access origin="http://fe.alqassim.gov.sa/gis/*" />
-  <access origin="https://fe.alqassim.gov.sa/gis/*" />
+  <access origin="https://fe.alqassim.gov.sa/gis/" />
   <allow-intent href="http://*/*" />
   <allow-intent href="https://*/*" />
   <allow-intent href="tel:*" />
@@ -19,8 +18,7 @@
   <allow-intent href="geo:*" />
   <allow-intent href="maps:*" />
   <allow-navigation href="*" />
-  <allow-navigation href="http://*/*" />
-  <allow-navigation href="https://*/*" />
+  <allow-navigation href="https://fe.alqassim.gov.sa/gis/" />
   <platform name="android">
     <allow-intent href="market:*" />
   </platform>
