@@ -18,7 +18,6 @@
   <allow-intent href="geo:*" />
   <allow-intent href="maps:*" />
   <allow-navigation href="*" />
-  <allow-navigation href="https://fe.alqassim.gov.sa/gis/" />
   <platform name="android">
     <allow-intent href="market:*" />
   </platform>
